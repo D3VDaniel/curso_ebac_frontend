@@ -1,11 +1,71 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Formulário de Tarefas</title>
+    <link rel="stylesheet" href="./main.css">
 </head>
 <body>
+    <div class="container">
+        <div class="item item-1">
+            <h2></h2>
+        </div>
+        <div class="item item-2">
+            <ul>
+                <li class="menu-item-1">
+                    <img src="./images/cadastre-se.png" href="#" alt="Formato ícones criados por Smashicons - Flaticon" />
+                    <a href="#" title="https://www.flaticon.com/br/icones-gratis/formato">
+                        Cadastrar Tarefa
+                    </a>
+                </li>
+                <li class="menu-item-2">
+                    <img src="./images/vitoria.png" alt="Vitória ícones criados por Talha Dogar - Flaticon" />
+                    <a href="https://www.flaticon.com/br/icones-gratis/vitoria" title="vitória ícones">
+                        Realizadas
+                    </a>
+                </li>
+                <li class="menu-item-3">
+                    <img src="./images/packard-bell.png" alt="Alarme ícones criados por Freepik - Flaticon" />
+                    <a href="https://www.flaticon.com/br/icones-gratis/alarme" title="alarme ícones">
+                        A Realizar
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="item item-3">
+            <header class="top-form">
+                <img src="./images/check-in.png" alt="Lista de controle ícones criados por bearicons - Flaticon" />
+                <a href="https://www.flaticon.com/br/icones-gratis/lista-de-controle" title="lista de controle ícones"></a>
+                <h2>Monitoramento de Tarefas</h2>
+            </header>
+            <h4>Foque no controle das suas tarefas de maneira fácil! Basta assinalar cada tarefa conforme você as completa ao longo do dia.</h4>
+            <ul>
+                <li>
+                    <input type="checkbox" />
+                    <p>Meditar</p>
+                </li>
+                <li>
+                    <input type="checkbox" />
+                    <p>Ler</p>
+                </li>
+                <li>
+                    <input type="checkbox" />
+                    <p>Estudar</p>
+                </li>
+            </ul>
+        </div>
+        <div class="item item-4">
+            <h2>Cadastrar nova Tarefa</h2>
+            <h4>Para criar uma novo Tarefa, digite o nome da tarefa na caixa de texto, e em seguida, pressione o botão <span style="color: green;">+ Nova.</span></h4>
+            <form>
+                <input type="text" id="nova-tarefa" required placeholder="Nova Tarefa">
+                <button type="submit" id="botao-adicionar">+ Nova</button>
+                <button type="reset" id="botao-cancelar">Cancelar</button>
+            </form>
+        </div>
+        <div class="item item-5"></div>
+    </div>
     
 </body>
 </html>
