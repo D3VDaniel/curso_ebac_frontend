@@ -29,7 +29,7 @@ body {
     grid-area: i1;
     background-image: url(https://cdn.pixabay.com/photo/2017/07/04/10/05/checklist-2470549_1280.jpg);
     background-size: 2100px 320px;
-    border-bottom: 2px solid #fff;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.81);
 }
 
 .item-2 {
@@ -44,6 +44,8 @@ body {
     grid-area: i3;
     background-color: #1f2937;
     border-radius: 20px;
+    overflow-y: scroll;
+
 }
 
 .item-4 {
@@ -63,9 +65,24 @@ body {
 
 .item-1 h2 {
     position: relative;
-    color: #fff;
+    color: rgba(255, 255, 255, 0.81);
     text-align: center;
     bottom: -20px;
+}
+
+.item-2 header {
+    display: flex;
+    max-width: 95%;
+    margin-top: 20px;
+}
+
+.item-2 header a {
+    color:rgba(255, 255, 255, 0.81);
+    text-decoration: none;
+    font-size: 12px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    margin-left: 5px;
 }
 
 .item-2 ul {
@@ -75,10 +92,12 @@ body {
     flex-wrap: nowrap;
     border-radius: 0 50px 50px 0;
     max-width: 95%;
-    margin-top: 20px;
     padding: auto 10px;
+    display: none;
 }
 
+.item-2 header,
+.item-2 button,
 .item-2 ul .menu-item-1,
 .item-2 ul .menu-item-2,
 .item-2 ul .menu-item-3 {
@@ -241,4 +260,33 @@ body {
 .item-5 .bottom a img {
     width: 30px;
     height: 30px;
+}
+
+.completed {
+    text-decoration: line-through;
+    color: grey;
+}
+
+.item-3::-webkit-scrollbar {
+    width: 1em;
+}
+
+.item-3::-webkit-scrollbar-track {
+    background: #1f2937;
+    border-radius: 0 25px 25px 0;
+    margin-block: 0.1em;
+    #1f2937;
+    rgba(255, 255, 255, 0.81);
+    #374151;
+    #111827;
+}
+
+.item-3::-webkit-scrollbar-thumb {
+    background:rgba(255, 255, 255, 0.81);
+    border: 0.25em solid #374151;
+    border-radius: 0 25px 25px 0px;
+}
+
+.item-3::-webkit-scrollbar-thumb:hover {
+    background: #111827;
 }
