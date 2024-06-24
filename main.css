@@ -1,0 +1,244 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+body {
+    font-family: sans-serif;
+    background: #111827;
+    overflow: ;
+}
+
+.container {
+    display: grid;
+    grid-template-areas: 
+        "i1 i1 i1"
+        "i2 i3 i4"
+        "i5 i5 i5";
+    grid-template-columns: 1fr 4fr 3fr;
+    grid-template-rows: 3fr 8fr 1fr;
+    gap: 10px;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+.item-1 {
+    grid-area: i1;
+    background-image: url(https://cdn.pixabay.com/photo/2017/07/04/10/05/checklist-2470549_1280.jpg);
+    background-size: 2100px 320px;
+    border-bottom: 2px solid #fff;
+}
+
+.item-2 {
+    grid-area: i2;
+    background-color: #1f2937;
+    border-radius: 0 20px 20px 0;
+}
+
+.item-3 {
+    display: flex;
+    flex-direction: column;
+    grid-area: i3;
+    background-color: #1f2937;
+    border-radius: 20px;
+}
+
+.item-4 {
+    grid-area: i4;
+    background-color: #1f2937;
+    margin-right: 10px;
+    border-radius: 20px;
+}
+
+.item-5 {
+    grid-area: i5;
+    background-color:#1f2937;
+}
+
+
+/* Conteúdo de cada grid */
+
+.item-1 h2 {
+    position: relative;
+    color: #fff;
+    text-align: center;
+    bottom: -20px;
+}
+
+.item-2 ul {
+    flex-direction: column;
+    display: flex;
+    position: relative;
+    flex-wrap: nowrap;
+    border-radius: 0 50px 50px 0;
+    max-width: 95%;
+    margin-top: 20px;
+    padding: auto 10px;
+}
+
+.item-2 ul .menu-item-1,
+.item-2 ul .menu-item-2,
+.item-2 ul .menu-item-3 {
+    display: flex;
+    align-items: center;
+    background-color: #374151;
+    border-radius: 0 50px 50px 0;
+    margin-bottom: 10px;
+}
+
+.item-2 ul li img {
+    padding: 5px;
+    max-width: 50px;
+    max-height: 50px;
+}
+
+.item-2 ul li a {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding-left: 5px;
+    text-decoration: none;
+    flex-wrap: nowrap;
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.81);
+    font-weight: bold;
+}
+
+.item-3 img {
+    margin-left: 40px;
+    max-width: 50px;
+    max-height: 50px;
+}
+
+.item-3 .top-form {
+    font-size: 18px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    border-radius: 20px 20px 0 0;
+}
+
+.top-form h2 {
+    color: rgba(255, 255, 255, 0.81);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    margin-top: 28px;
+}
+
+.item-3 h4 {
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.81);
+    padding: 0 90px;
+    margin-bottom: 20px;
+    font-weight: 100;
+}
+
+.item-3 ul {
+    color: rgba(255, 255, 255, 0.81);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.item-3 ul li {
+    display: flex;
+    padding: 10px 90px;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.item-3 ul li p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+    padding: 0 10px;
+}
+
+.item-4 form {
+    display: flex;
+    padding: 10px 40px;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+.item-4 h2 {
+    font-size: 28px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    padding: 40px 0 5px 40px;
+    color: rgba(255, 255, 255, 0.81);
+}
+
+.item-4 h4 {
+    padding: 0 0 5px 40px;
+    color: rgba(255, 255, 255, 0.81);
+    font-size: 14px;
+    font-weight: 100;
+}
+
+.item-4 form input,
+.item-4 form button {
+    margin-right: 10px;
+    height: 30px;
+    border-radius: 8px;
+    color: #111827;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 300;
+    width: 200px;
+}
+
+.item-4 form #botao-adicionar {
+    color: green;
+    background-color: rgba(255, 255, 255, 0.81);
+    font-weight: bold;
+    width: 80px;
+}
+
+.item-4 form #botao-adicionar:hover {
+    color: rgba(255, 255, 255, 0.81);
+    background-color: green;
+    font-weight: bold;
+}
+
+.item-4 form #botao-cancelar {
+    color: red;
+    background-color: rgba(255, 255, 255, 0.81);
+    font-weight: bold;
+    width: 80px;
+}
+
+.item-4 form #botao-cancelar:hover {
+    color: rgba(255, 255, 255, 0.81);
+    background-color: red;
+    font-weight: bold;
+}
+
+.item-5 .bottom {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    color: rgba(255, 255, 255, 0.81);
+    
+}
+
+.item-5 .bottom h4 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 10px 10px 10px;
+    letter-spacing: 1px;
+    border-right: 1px solid rgba(255, 255, 255, 0.1);
+    width: 158;
+    height: 38px;
+    margin-top: 10px;
+}
+
+.item-5 .bottom a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.item-5 .bottom a img {
+    width: 30px;
+    height: 30px;
+}
