@@ -44,6 +44,8 @@ body {
     grid-area: i3;
     background-color: #1f2937;
     border-radius: 20px;
+    overflow-y: scroll;
+
 }
 
 .item-4 {
@@ -258,4 +260,33 @@ body {
 .item-5 .bottom a img {
     width: 30px;
     height: 30px;
+}
+
+.completed {
+    text-decoration: line-through;
+    color: grey;
+}
+
+.item-3::-webkit-scrollbar {
+    width: 1em;
+}
+
+.item-3::-webkit-scrollbar-track {
+    background: #1f2937;
+    border-radius: 0 25px 25px 0;
+    margin-block: 0.1em;
+    #1f2937;
+    rgba(255, 255, 255, 0.81);
+    #374151;
+    #111827;
+}
+
+.item-3::-webkit-scrollbar-thumb {
+    background:rgba(255, 255, 255, 0.81);
+    border: 0.25em solid #374151;
+    border-radius: 0 25px 25px 0px;
+}
+
+.item-3::-webkit-scrollbar-thumb:hover {
+    background: #111827;
 }
