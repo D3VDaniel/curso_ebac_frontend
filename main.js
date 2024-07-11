@@ -16,7 +16,6 @@ $(document).ready(function() {
     });
 
      // Adiciona nova tarefa à lista
-
     $('#form-tarefas').submit(function(event) {
         event.preventDefault();
         var novaTarefa = $('#nova-tarefa').val();
