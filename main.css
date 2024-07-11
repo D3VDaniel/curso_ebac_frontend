@@ -8,7 +8,6 @@
 body {
     font-family: sans-serif;
     background: #111827;
-    overflow: ;
 }
 
 .container {
@@ -31,12 +30,13 @@ body {
     background-image: url(https://cdn.pixabay.com/photo/2017/07/04/10/05/checklist-2470549_1280.jpg);
     background-size: 2100px 320px;
     border-bottom: 2px solid rgba(255, 255, 255, 0.81);
+    border-radius: 0 0 20px 20px;
 }
 
 .item-2 {
     grid-area: i2;
     background-color: #1f2937;
-    border-radius: 0 20px 20px 0;
+    border-radius: 20px 20px 20px 20px;
 }
 
 .item-3 {
@@ -52,20 +52,19 @@ body {
 .item-4 {
     grid-area: i4;
     background-color: #1f2937;
-    margin-right: 10px;
     border-radius: 20px;
 }
 
 .item-6 {
     grid-area: i6;
     background-color: #1f2937;
-    margin-right: 10px;
     border-radius: 20px;
 }
 
 .item-5 {
     grid-area: i5;
     background-color:#1f2937;
+    border-radius: 20px 20px 0 0;
 }
 
 
@@ -242,13 +241,9 @@ body {
 
 /* ITEM 6 */
 
-.item-6 {
-    display: ;
-}
-
 .item-6 form {
     display: table-caption;
-    padding: 10px 40px;
+    padding: 0 40px;
     flex-wrap: nowrap;
     align-items: center;
 }
@@ -268,15 +263,31 @@ body {
     font-weight: 100;
 }
 
+.item-6 label {
+    color: rgba(255, 255, 255, 0.81);
+    margin-bottom: 0;
+}
+
 .item-6 form input,
 .item-6 form button {
-    margin-right: 10px;
-    height: 30px;
     border-radius: 8px;
     color: #111827;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 300;
-    width: 200px;
+    font-size: 100;
+    width: 400px;
+}
+
+.item-6 form .btn {
+    display: inline-grid;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 14px;
+    justify-content: center;
+    text-align: center;
+}
+
+.item-6 .form-check {
+    margin-top: 10px;
 }
 
 .item-6 form #botao-adicionar {

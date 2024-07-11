@@ -1,5 +1,7 @@
 $(document).ready(function() {
     // Expande e retrai o menu
+    
+    $('#tel').mask('(00) 00000-0000');
 
     $('.item-2 header a').click(function() {
         $('.item-2 ul').slideToggle();
@@ -45,3 +47,28 @@ style.innerHTML = `
     }
 `;
 document.head.appendChild(style);
+
+$('#form-envio').validate({
+    rules: {
+        nome: {
+            required: true
+        },
+        email: {
+            required: true,
+            email: true
+        },
+        tel: {
+            required: true,
+        },
+    },
+    submitHandler: function(form) {
+        alert("Parabéns! Suas Tarefas foram enviadas por Email. Continue monitorando.");
+        form.reset();
+    },
+    invalidHandler: function (form, validador) {
+        let camposIncorretos = validador.numberOfInvalids();
+        if (camposIncorretos) {
+        alert(`Existe(m) ${camposIncorretos} campo(s) incorreto(s). Por favor, preencha corretamente para prosseguir com a compra!`);
+        }
+    }
+})
