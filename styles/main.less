@@ -1,0 +1,153 @@
+@import "mapas.less";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Roboto, sans-serif;
+}
+
+body {
+    background-color: #colors[cordeFundo];
+}
+
+.branding img {
+    border-radius: 16px;
+}
+
+li {
+    list-style: none;
+}
+
+.container {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.about {
+    max-width: 1024px;
+    width: 100%;
+    margin: 16px auto;
+    align-items: center;
+}
+
+.about img {
+    border-radius: 16px;
+}
+
+header {
+    background-color: #colors[cordoTexto];
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 0;
+}
+
+.menu {
+    display: flex;
+}
+
+.menu li {
+    font-weight: bold;
+    margin-left: 24px;
+    transition: all ease .3s;
+
+    &:hover {
+        transform: scale(1.1);
+    }
+}
+
+.menu li a {
+    color: #colors[cordeFundo];
+    text-decoration: none;
+    font-size: 18px;
+    transition: all ease .3s;
+
+    &:hover {
+        color: #colors[cordoBotao];
+    }
+}
+
+.menu li img {
+    color: #colors[cordeFundo];
+    transition: all ease .3s;
+
+    &:hover {
+        color: #colors[cordoBotao];
+        transform: scale(1.3);
+    }
+}
+
+section {
+    padding: 56px 0;
+}
+
+h2, h4, p {
+    color: #colors[cordoTexto];
+}
+
+.products {
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(3, 32.66%);
+    column-gap: 1%;
+    row-gap: 4%;
+    width: 100%;
+}
+
+.product-item img {
+    width: 100%;
+    border-radius: 16px;
+}
+
+.product-button {
+    display: block;
+    background-color: #colors[cordoBotao];
+    color: #colors[cordeFundo];
+    text-align: center;
+    padding: 8px 0;
+    border-radius: 8px;
+    margin-top: 8px;
+    text-decoration: none;
+}
+
+.product-button:hover {
+    background-color: #colors[cordoTexto];
+    transition: all ease .4s;
+}
+
+
+.product-button a:hover {
+    transition: all ease .4s;
+    transform: scale(1.4);
+}
+
+
+
+@media screen and (max-width: 1023px) {
+    .container {
+        max-width: 80%;
+    }
+
+    .products {
+        grid-template-columns: repeat(2, 48.5%);
+        column-gap: 3%;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .products {
+        display: block;
+    }
+
+    .product-item  {
+        margin-bottom: 32px;
+    }
+}
